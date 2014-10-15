@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Panda.js HTML5 game engine</title>
+
+    <link rel="stylesheet" type="text/css" href="style/official_site.css">
+    <link rel="stylesheet" href="js/codemirror/lib/codemirror.css">
+
+    <script src="js/codemirror/lib/codemirror.js"></script>
+    <script src="js/codemirror/mode/javascript/javascript.js"></script>
+    <script src="js/jquery/jquery.js"></script>
+    <script src="js/jquery/jquery.storageapi.min.js"></script>
+    <!--script src="js/jquery/jquery.autosize.min.js"></script-->
+    
+    <script src="js/beautify/beautify.js"></script>
+    <script src="js/beautify/beautify-css.js"></script>
+    <script src="js/beautify/beautify-html.js"></script>
+
+    <script src="js/fiddler.js"></script>
+
+
+    <script type="text/javascript" src="src/game/config.js"></script>
+    <script type="text/javascript" src="src/engine/core.js"></script>
+    <!--script type="text/javascript" src="src/game/main.js"></script-->
+	<style>
+		.CodeMirror {
+		  border: 1px solid #eee;
+		  height: auto;
+		}
+		.CodeMirror-scroll {
+		  overflow-y: hidden;
+		  overflow-x: auto;
+		}
+	</style>
+</head>
+<body>
+    <div id="header">
+	    <div class="wrapper" style='text-align: left'>
+	        <div id="nav">
+	            <a href="index.html" ><span>back</span></a>
+	        </div>
+	    </div>
+	</div>
+
+	<div id="bg">
+	    <div id="wrapper">
+	    	<div style="margin: 10px; text-align: center">
+	    		<canvas id="canvas"></canvas>
+	    	</div>
+	    	
+	    	<a href="#" onclick="refresh()">run code</a>
+		    <div style='border: 1px solid #333'>
+		    	<textarea id="source"></textarea>
+		    </div>
+		</div>
+	</div>
+	
+<!--div id="bg">
+</div>
+<div onclick="refresh()">go</div-->
+	
+</body>
+</html>

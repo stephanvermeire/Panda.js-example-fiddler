@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://www.pandajs.net/examples/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="author" content="Eemeli Kelokorpi">
+    <meta name="description" content="Free open source HTML5 game engine for mobile and desktop with Canvas and WebGL rendering.">
+    <meta name="apple-mobile-web-app-title" content="Panda.js">
+
+    <meta property="og:url" content="http://www.pandajs.net/examples/index.html">
+    <meta property="og:image" content="http://www.pandajs.net/img/logo2_400x400.png">
+    <meta property="og:title" content="Panda.js - Examples">
+    <meta property="og:description" content="Free open source HTML5 game engine for mobile and desktop with Canvas and WebGL rendering.">
+
+    <title>Panda.js - Fiddler</title>
+    <link rel="shortcut icon" href="http://www.pandajs.net/favicon.png">
+    <link rel="stylesheet" type="text/css" href="style/official_site.css">
+
+    <script src="js/jquery/jquery.js"></script>
+    <script src="js/jquery/jquery.storageapi.min.js"></script>
+    <script src="js/main.js"></script>
+	<!--script async="" src="./Panda.js - Examples_files/analytics.js"></script-->
+	<script type="text/javascript">
+        // Retina icons support
+        window.onload = function() {
+            if(window.devicePixelRatio === 2) {
+                var images = document.getElementsByTagName('img');
+                for (var i = 0; i < images.length; i++) {
+                    if(images[i].src.indexOf('icons') !== -1 && images[i].src.indexOf('32') !== -1) {
+                        images[i].src = images[i].src.replace('32', '64');
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+
+<body>
+<div id="header">
+    <div class="wrapper">
+        <div id="nav">
+            <a href="http://www.pandajs.net/download/"><img src="media/icons_small/download.png"><span>Download</span></a>
+            <a href="http://www.pandajs.net/features/"><img src="media/icons_small/flame.png"><span>Features</span></a>
+            <a href="http://www.pandajs.net/showcase/"><img src="media/icons_small/gamecontroller.png"><span>Showcase</span></a>
+            <a href="http://www.pandajs.net/screencasts/"><img src="media/icons_small/video.png"><span>Screencasts</span></a>
+            <a href="http://www.pandajs.net/examples/"><img src="media/icons_small/clipboard.png"><span>Examples</span></a>
+            <a href="http://www.pandajs.net/docs/"><img src="media/icons_small/document.png"><span>Documentation</span></a>
+        </div>
+    </div>
+</div>
+
+<div id="bg">
+    <div id="wrapper">
+        <h1>Panda.js Fiddler</h1>
+        
+        <h3>Examples</h3>
+        
+		<p></p>
+		<h6>Core</h6>
+		<div class="box float">
+			<ul>
+				<li><a href="#" onclick="go('https://gist.githubusercontent.com/ekelokorpi/9736211/raw/749f970484f7383aca930ba1906cf8dc67d13fd5/main.js')">text font</a></li>
+				<li><a href="#" onclick="go('src/game/font/textfont_styles.js')">font styles</a></li>
+				<li><a href="#" onclick="go('src/game/font/textfont_paragraph.js')">paragraph</a></li>
+				<li><a href="#" onclick="go('src/game/font/bitmapfont.js')">bitmap font</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+
+		<p></p>
+		<h6>Fonts</h6>
+		<div class="box float">
+			<ul>
+				<li><a href="#" onclick="go('src/game/font/textfont.js')">text font</a></li>
+				<li><a href="#" onclick="go('src/game/font/textfont_styles.js')">font styles</a></li>
+				<li><a href="#" onclick="go('src/game/font/textfont_paragraph.js')">paragraph</a></li>
+				<li><a href="#" onclick="go('src/game/font/bitmapfont.js')">bitmap font</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+
+		<p></p>
+		<h6>Graphics and shapes</h6>
+		<div class="box float">
+			<ul>
+				<li><a href="#" onclick="go('src/game/shapes/square_circle_ellipse.js')">Square, circle, ellipse</a></li>
+				<li><a href="#" onclick="go('src/game/shapes/lines_curves.js')">lines and curves</a></li>
+				<li><a href="#" onclick="go('src/game/shapes/polygon.js')">polygon</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+
+		<p></p>
+		<h6>Sprites</h6>
+		<div class="box float">
+			<ul>
+				<li><a href="#" onclick="go('src/game/sprites/basics.js')">basics</a></li>
+				<li><a href="#" onclick="go('src/game/sprites/constructor.js')">Full constructor</a></li>
+				<li><a href="#" onclick="go('src/game/sprites/position.js')">Set position</a></li>
+				<li><a href="#" onclick="go('src/game/sprites/anchor.js')">Set anchor</a></li>
+				<li><a href="#" onclick="go('src/game/sprites/scale.js')">Set scale</a></li>
+				<li><a href="#" onclick="go('src/game/sprites/rotation.js')">Set rotation</a></li>
+				<li><a href="#" onclick="go('src/game/sprites/alpha.js')">Set alpha</a></li>
+				<li><a href="#" onclick="go('src/game/sprites/visibility.js')">Set visibility</a></li>
+				<li><a href="#" onclick="go('src/game/sprites/flipxy.js')">Flip/mirror sprite</a></li>
+				<li><a href="#" onclick="go('src/game/sprites/enlarge.js')">Enlarge sprite</a></li>
+				<li><a href="#" onclick="go('src/game/sprites/texture.js')">Change texture</a></li>
+				<li><a href="#" onclick="go('src/game/sprites/texturename.js')">Short texture name</a></li>
+				<li><a href="#" onclick="go('src/game/sprites/addto.js')">addTo v.s. addChild</a></li>
+				<li><a href="#" onclick="go('src/game/sprites/center.js')">Center on page</a></li>
+				<li><a href="#" onclick="go('src/game/sprites/remove.js')">Remove</a></li>
+				<li><a href="#" onclick="go('src/game/sprites/z_order.js')">z-order sprites</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+
+		<p></p>
+		<h6>Mouse</h6>
+		<div class="box float">
+			<ul>
+				<li><a href="#" onclick="go('src/game/input/clickcanvas.js')">Click the canvas</a></li>
+				<li><a href="#" onclick="go('src/game/input/clicksprite.js')">Click a sprite</a></li>
+				<li><a href="#" onclick="go('src/game/input/clickroundsprite.js')">Click round sprite</a></li>
+				<li><a href="#" onclick="go('src/game/input/clickpolygonsprite.js')">Click polygon sprite</a></li>
+				<li><a href="#" onclick="go('src/game/input/clicktiledsprites.js')">Tiled sprites</a></li>
+				<li><a href="#" onclick="go('src/game/input/clicktextgraphics.js')">Click text/graphics</a></li>
+				<li><a href="#" onclick="go('src/game/input/combinedobjects.js')">Click combined objects</a></li>
+				<li><a href="#" onclick="go('src/game/input/dragasprite.js')">Drag a sprite</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+
+		<p></p>
+		<h6>Keyboard</h6>
+		<div class="box float">
+			<ul>
+				<li><a href="#" onclick="go('src/game/keyboard/keyboard.js')">Capture keyboard</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+
+		<p></p>
+		<h6>Buttons</h6>
+		<div class="box float">
+			<ul>
+				<li><a href="#" onclick="go('src/game/buttons/button1.js')">Graphics button</a></li>
+				<li><a href="#" onclick="go('src/game/buttons/button2.js')">Sprite button</a></li>
+				<li><a href="#" onclick="go('src/game/buttons/button3.js')">Animated button</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+
+		<p></p>
+		<h6>Sound</h6>
+		<div class="box float">
+			<ul>
+				<li><a href="#" onclick="go('src/game/sound/playsound.js')">Play sound</a></li>
+				<li><a href="#" onclick="go('src/game/sound/playmusic.js')">Play music</a></li>
+				<li><a href="#" onclick="go('src/game/sound/playlist.js')">Play a subsequent list</a></li>
+				<li><a href="#" onclick="go('src/game/sound/multichannel.js')">Multichannel soundplayer</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+
+
+
+	</div>
+</div>
+
+<div id="footer">
+    © 2014 Panda.js
+    <a href="http://www.pandajs.net/">Home</a><span></span>
+    <a href="http://www.pandajs.net/download/">Download</a><span></span>
+    <a href="http://www.pandajs.net/features/">Features</a><span></span>
+    <a href="http://www.pandajs.net/showcase/">Showcase</a><span></span>
+    <a href="http://www.pandajs.net/screencasts/">Screencasts</a><span></span>
+    <a href="./Panda.js - Examples_files/Panda.js - Examples.htm">Examples</a><span></span>
+    <a href="http://www.pandajs.net/docs/">Documentation</a><span></span>
+    <a href="http://www.pandajs.net/contact.html">Contact</a>
+</div>
+
+</body></html>
