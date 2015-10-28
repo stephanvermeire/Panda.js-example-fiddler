@@ -1,0 +1,63 @@
+{
+"skeleton": { "hash": "8YWYm5O71Z+ElyhSXWeKyEsvsew", "spine": "2.0.23", "width": 112.43, "height": 112.43 },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "length": 52, "x": 0.08, "y": 0.01, "rotation": -90 }
+],
+"slots": [
+	{ "name": "project/g4680", "bone": "root", "attachment": "anim3/base" },
+	{ "name": "project/g4760", "bone": "bone", "attachment": "anim3/propeller" }
+],
+"skins": {
+	"default": {
+		"project/g4680": {
+			"anim3/base": { "x": -1.49, "y": -3.98, "width": 59, "height": 61 }
+		},
+		"project/g4760": {
+			"anim3/propeller": { "y": -0.11, "rotation": 90, "width": 100, "height": 100 }
+		}
+	}
+},
+"animations": {
+	"animation3a": {
+		"bones": {
+			"bone": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.1333, "angle": 269.99 }
+				]
+			}
+		}
+	},
+	"animation3b": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 0.3333, "angle": 0, "curve": "stepped" },
+					{ "time": 0.6666, "angle": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 0.3333, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 0.6666, "x": 1, "y": 1 }
+				]
+			},
+			"bone": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.1666, "angle": 269.54 },
+					{ "time": 0.3333, "angle": 179.54 },
+					{ "time": 0.5, "angle": 89.98 },
+					{ "time": 0.6666, "angle": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 },
+					{ "time": 0.3333, "x": 1.248, "y": 1.248 },
+					{ "time": 0.6666, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}

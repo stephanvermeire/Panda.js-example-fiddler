@@ -1,9 +1,6 @@
 game.module(
     'game.main'
 )
-.require(
-    'engine.core'
-)
 .body(function(){
 
     //Basic font uses the fonts that are already installed on the device.

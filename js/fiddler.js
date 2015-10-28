@@ -30,13 +30,13 @@ $(function () {
 
 	var storage=$.localStorage;
     default_text=storage.get('codesnippets');
+	//ajust link back
+	var backlink = "index.html#" + storage.get('linkback');
+	$('#backlink').prop("href", backlink);	
+	console.log(backlink);
     the.editor.setValue(default_text);
-    //$('#source').trigger('autosize.resizeIncludeStyle');
     eval(default_text);
     document.getElementById("canvas").style.marginTop="10px";
-    //document.getElementById("canvas").style.marginLeft="auto";
-    //$('#canvas').css("position", "relative");
-    console.log("!");
 
 });
 

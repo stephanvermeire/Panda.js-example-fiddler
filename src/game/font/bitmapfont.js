@@ -1,9 +1,6 @@
 game.module(
     'game.main'
 )
-.require(
-    'engine.core'
-)
 .body(function(){
 
     //You have to load a bitmap font before you can use it.

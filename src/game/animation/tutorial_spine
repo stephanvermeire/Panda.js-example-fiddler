@@ -1,0 +1,51 @@
+Spine tutorial
+
+========== Voorbereiding ========== 
+* Object in stukken hakken. Ook een geheel achtergrond plaatje maken
+
+Stel we willen het volgende maken:
+spelletje: vissenvangen
+animaties: vis1, vis2, vis3
+
+Er is een hoofdfolder voor alle bestanden van dit spelletje:
+	media/vissenvangen
+
+* maak voor iedere aparte animatie een map aan met de naar van de animatie. Bijv:
+	media/vissenvangen/vis1
+
+* maak in deze map een folder aan met DEZELFDE NAAM ALS HET SPELLETJE! bijv: 
+	media/vissenvangen/vis1/vissenvangen
+* Doe in deze folder alle plaatjse die nodig zijn voor deze animatie.
+
+
+
+========== Animatie maken met Spine ========== 
+* Maak een nieuwe project in spine aan en sla dit op in de folder van de specifieke animatie. Bijv:
+	media/vissenvangen/vis1
+
+* Maak de animatie
+* exporteer json vanuit spine naar zelfde directory waar het spine bestad staat. Hernoem het bestand tot bijv: vis1_skeleton.json). 
+
+
+
+========== inpakken met TexturePacker ========== 
+* maak een nieuw texturepacker bestand aan en sla dit op in de folder van de specifieke animatie (hier: vis1).
+  Omdat we de plaatjes al in een folder hebben gezet met dezelfde naam als het spelletje, kunnen de plaatjes direct met de juiste relatieve verwjzing worden ingeladen.
+  
+* (Switch to basic mode: layout/algorithm: basic, sprites/trim mode:none)
+* Onder data: zet instellingen onder file door naar de folder te bladeren waar de plaatjes staan.
+	C:/xampp/htdocs/taalprog/media/vissenvangen/vis1/vis1_spritesheet.json
+	C:/xampp/htdocs/taalprog/media/vissenvangen/vis1/vis1_spritesheet.png
+* nu klik bij data op "show advanced" en wijzig: prepend folder: true
+* publish. (Melding ok)
+* Sla eventueel het texturepacker bestand zelf even op voor gebruik later.
+
+* kopieer uit de folder vis1 de volgende bestanden naar de map van het spelletje:
+	 vis1_spritesheet.json
+	 vis1_spritesheet.png
+	 vis1_skeleton.json
+
+Alle bestanden in de map vis1 zijn voor de ontwikkelfase. Enkel de bestanden in de spelletjesmap zijn nodig voor productie.
+
+NB: Je kunt eventueel ook ALLE plaatjes van het gehele spelletje bundelen in één TexturePacker spritesheet.
+	 
