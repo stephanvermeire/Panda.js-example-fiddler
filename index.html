@@ -36,14 +36,14 @@
 </head>
 
 <body>
-<div id="header">
+<div id="header" style='position: relative;'>
     <div class="wrapper">
         <div id="nav">
             <a href="http://www.pandajs.net/download/"><img src="media/icons_small/download.png"><span>Download</span></a>
             <a href="http://www.pandajs.net/features/"><img src="media/icons_small/flame.png"><span>Features</span></a>
             <a href="http://www.pandajs.net/showcase/"><img src="media/icons_small/gamecontroller.png"><span>Showcase</span></a>
             <a href="http://www.pandajs.net/screencasts/"><img src="media/icons_small/video.png"><span>Screencasts</span></a>
-            <a href="http://www.pandajs.net/examples/"><img src="media/icons_small/clipboard.png"><span>Examples</span></a>
+            <a href="http://www.pandajs.net/cheatsheet/"><img src="media/icons_small/clipboard.png"><span>Cheatsheat</span></a>
             <a href="http://www.pandajs.net/docs/"><img src="media/icons_small/document.png"><span>Documentation</span></a>
         </div>
     </div>
@@ -55,20 +55,58 @@
         
         <h3>Examples</h3>
         
-		<p></p>
-		<h6>Core</h6>
+		<h6 id="physics">Basic physics</h6>
 		<div class="box float">
 			<ul>
-				<li><a href="#" onclick="go('https://gist.githubusercontent.com/ekelokorpi/9736211/raw/749f970484f7383aca930ba1906cf8dc67d13fd5/main.js')">text font</a></li>
-				<li><a href="#" onclick="go('src/game/font/textfont_styles.js')">font styles</a></li>
-				<li><a href="#" onclick="go('src/game/font/textfont_paragraph.js')">paragraph</a></li>
-				<li><a href="#" onclick="go('src/game/font/bitmapfont.js')">bitmap font</a></li>
+				<li><a href="#" onclick="go('src/game/physics/movement.js')">body and movement</a></li>
+				<li><a href="#" onclick="go('src/game/physics/collision.js')">collision handling</a></li>
 			</ul>
 			<div class="clear"></div>
 		</div>
 
-		<p></p>
-		<h6>Fonts</h6>
+		<h6 id='physicsextend'>P2 Physics plugin <span style='font-weight: bold; color: red;'>NEW!</span> </h6>
+		<div class="box float">
+			<ul>
+				<li><a href="#" onclick="go('src/game/p2/collision.js')">Collision demo</a></li>
+				<li><a href="#" onclick="go('src/game/p2/pe_loader.js')">loading settings from PhysicsEditor</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+
+		<h6 id='physicsextend'>Physics extention plugin</h6>
+		<div class="box float">
+			<ul>
+				<li><a href="#" onclick="go('src/game/physicsextend/collision.js')">Collision demo</a></li>
+				<li><a href="#" onclick="go('src/game/physicsextend/fixed.js')">Fixed property (wall shapes)</a></li>
+				<li><a href="#" onclick="go('src/game/physicsextend/gravityfactor.js')">gravityFactor property</a></li>
+				<li><a href="#" onclick="go('src/game/physicsextend/restitution.js')">restitution property (bounciness)</a></li>
+				<li><a href="#" onclick="go('src/game/physicsextend/demoballs.js')">Balls showcase</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+
+		<h6 id='box2d'>Box2D physics</h6>
+		<div class="box float">
+			<ul>
+				<li><a href="#" onclick="go('src/game/box2d/basics.js')">Basics (ball shapes)</a></li>
+				<li><a href="#" onclick="go('src/game/box2d/rectangles.js')">Rectangles</a></li>
+				<li><a href="#" onclick="go('src/game/box2d/polygons.js')">polygons</a></li>
+				<li><a href="#" onclick="go('src/game/box2d/impulse.js')">impulses (panda at Ikea)</a></li>
+				<li><a href="#" onclick="go('src/game/box2d/benchbox2d.js')">Box2D bench</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+
+		<h6 id='loader'>Loader</h6>
+		<div class="box float">
+			<ul>
+				<li><a href="#" onclick="go('src/game/loader/preload.js')">Preloading assets</a></li>
+				<li><a href="#" onclick="go('src/game/loader/dynamicmode.js')">Dynamical mode</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+
+		<h6 id="font">Fonts</h6>
 		<div class="box float">
 			<ul>
 				<li><a href="#" onclick="go('src/game/font/textfont.js')">text font</a></li>
@@ -79,8 +117,7 @@
 			<div class="clear"></div>
 		</div>
 
-		<p></p>
-		<h6>Graphics and shapes</h6>
+		<h6 id="shapes">Graphics and shapes</h6>
 		<div class="box float">
 			<ul>
 				<li><a href="#" onclick="go('src/game/shapes/square_circle_ellipse.js')">Square, circle, ellipse</a></li>
@@ -90,8 +127,7 @@
 			<div class="clear"></div>
 		</div>
 
-		<p></p>
-		<h6>Sprites</h6>
+		<h6 id="sprites">Sprites</h6>
 		<div class="box float">
 			<ul>
 				<li><a href="#" onclick="go('src/game/sprites/basics.js')">basics</a></li>
@@ -110,12 +146,64 @@
 				<li><a href="#" onclick="go('src/game/sprites/center.js')">Center on page</a></li>
 				<li><a href="#" onclick="go('src/game/sprites/remove.js')">Remove</a></li>
 				<li><a href="#" onclick="go('src/game/sprites/z_order.js')">z-order sprites</a></li>
+				<li><a href="#" onclick="go('src/game/sprites/tiling_sprites.js')">tiling sprites</a></li>
 			</ul>
 			<div class="clear"></div>
 		</div>
 
-		<p></p>
-		<h6>Mouse</h6>
+		<h6 id="particles">Particles</h6>
+		<div class="box float">
+			<ul>
+				<li><a href="#" onclick="go('src/game/particles/basicparticles.js')">Basic particles</a></li>
+				<li><a href="#" onclick="go('src/game/particles/target.js')">Target</a></li>
+				<li><a href="#" onclick="go('src/game/particles/scale.js')">Scale</a></li>
+				<li><a href="#" onclick="go('src/game/particles/alpha.js')">Alpha</a></li>
+				<li><a href="#" onclick="go('src/game/particles/rotation.js')">Rotation</a></li>
+				<li><a href="#" onclick="go('src/game/particles/veocityrotate.js')">Velocity rotate</a></li>
+				<li><a href="#" onclick="go('src/game/particles/rateandcount.js')">Rate and count</a></li>
+				<li><a href="#" onclick="go('src/game/particles/emitterduration.js')">Emitter duration</a></li>
+				<li><a href="#" onclick="go('src/game/particles/life.js')">Life</a></li>
+				<li><a href="#" onclick="go('src/game/particles/speed.js')">Speed</a></li>
+				<li><a href="#" onclick="go('src/game/particles/angle.js')">Angle</a></li>
+				<li><a href="#" onclick="go('src/game/particles/positionvariance.js')">Position variance</a></li>
+				<li><a href="#" onclick="go('src/game/particles/showcase_box.js')">Showcase box</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+
+		<h6 id="tween">tween</h6>
+		<div class="box float">
+			<ul>
+				<li><a href="#" onclick="go('src/game/tween/basictween.js')">Basic tween</a></li>
+				<li><a href="#" onclick="go('src/game/tween/easing.js')">Easing</a></li>
+				<li><a href="#" onclick="go('src/game/tween/delay.js')">Delay</a></li>
+				<li><a href="#" onclick="go('src/game/tween/repeat.js')">Repeat</a></li>
+				<li><a href="#" onclick="go('src/game/tween/reverserepeat.js')">Reverse repeat</a></li>
+				<li><a href="#" onclick="go('src/game/tween/stoptween.js')">Stop tween</a></li>
+				<li><a href="#" onclick="go('src/game/tween/chain.js')">Chain</a></li>
+				<li><a href="#" onclick="go('src/game/tween/grouping.js')">Grouping</a></li>
+				<li><a href="#" onclick="go('src/game/tween/groupingandchain.js')">Chain + Grouping</a></li>
+				<li><a href="#" onclick="go('src/game/tween/onstart.js')">onStart / onComplete</a></li>
+				<li><a href="#" onclick="go('src/game/tween/complexchain.js')">complex example</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+
+		<h6 id="animation">Animation</h6>
+		<div class="box float">
+			<ul>
+				<li><a href="#" onclick="go('src/game/animation/framebased.js')">frame based animation</a></li>
+				<li><a href="#" onclick="go('src/game/animation/loop.js')">animation loop</a></li>
+				<li><a href="#" onclick="go('src/game/animation/oncomplete.js')">onComplete</a></li>
+				<li><a href="#" onclick="go('src/game/animation/changeanimation.js')">change animation</a></li>
+				<li><a href="#" onclick="go('src/game/animation/spinebasics.js')">Spine animation (basics)</a></li>
+				<li><a href="#" onclick="go('src/game/animation/preventcollision.js')">prevent cache collision</a></li>
+				<li><a href="#" onclick="go('src/game/animation/spinepanda.js')">Showcase Panda</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+
+		<h6 id='input'>Mouse</h6>
 		<div class="box float">
 			<ul>
 				<li><a href="#" onclick="go('src/game/input/clickcanvas.js')">Click the canvas</a></li>
@@ -130,8 +218,7 @@
 			<div class="clear"></div>
 		</div>
 
-		<p></p>
-		<h6>Keyboard</h6>
+		<h6 id="keyboard">Keyboard</h6>
 		<div class="box float">
 			<ul>
 				<li><a href="#" onclick="go('src/game/keyboard/keyboard.js')">Capture keyboard</a></li>
@@ -139,8 +226,7 @@
 			<div class="clear"></div>
 		</div>
 
-		<p></p>
-		<h6>Buttons</h6>
+		<h6 id="buttons">Buttons</h6>
 		<div class="box float">
 			<ul>
 				<li><a href="#" onclick="go('src/game/buttons/button1.js')">Graphics button</a></li>
@@ -150,14 +236,56 @@
 			<div class="clear"></div>
 		</div>
 
-		<p></p>
-		<h6>Sound</h6>
+		<h6 id="sound">Sound</h6>
 		<div class="box float">
 			<ul>
 				<li><a href="#" onclick="go('src/game/sound/playsound.js')">Play sound</a></li>
 				<li><a href="#" onclick="go('src/game/sound/playmusic.js')">Play music</a></li>
 				<li><a href="#" onclick="go('src/game/sound/playlist.js')">Play a subsequent list</a></li>
 				<li><a href="#" onclick="go('src/game/sound/multichannel.js')">Multichannel soundplayer</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+
+		<h6 id="camera">Camera</h6>
+		<div class="box float">
+			<ul>
+				<li><a href="#" onclick="go('src/game/camera/basics.js')">basics</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+
+		<h6 id="other">Other</h6>
+		<div class="box float">
+			<ul>
+				<li><a href="#" onclick="go('src/game/other/scene_transition.js')">Scene transition</a></li>
+				<!--li><a href="#" onclick="go('src/game/other/scene_data_transfer.js')">Transfer data to new scene</a></li-->
+				<li><a href="#" onclick="go('src/game/other/timer.js')">timer</a></li>
+				<li><a href="#" onclick="go('src/game/other/tiling_sprites.js')">tiling sprites</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+
+		<h6 id="config">Config <span style="font-weight:normal; font-style: italic; font-size:13px"> - (code only)</span></h6>
+		<div class="box float">
+			<ul>
+				<li><a href="#" onclick="goCodeOnly('https://gist.githubusercontent.com/ekelokorpi/9720487/raw/8e988aa08b1943136b7fbc2384383bfe67c6dd36/config.js')">Sitelock</a></li>
+				<li><a href="#" onclick="goCodeOnly('https://gist.githubusercontent.com/ekelokorpi/9720482/raw/1d0e479eb30f3757a1e9c88836c75d4de42d903f/config.js')">Module attributes</a></li>
+				<li><a href="#" onclick="goCodeOnly('https://gist.githubusercontent.com/ekelokorpi/9719999/raw/09072900dae8fd0e79ca8bd5c75f481ce0de444b/config.js')">Device specific</a></li>
+				<li><a href="#" onclick="goCodeOnly('https://gist.githubusercontent.com/ekelokorpi/9719307/raw/1d86efe27b5655a86498ca16f07d4c06e3806842/config.js')">Custom debug</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+
+		<h6 id="core">Core <span style="font-weight:normal; font-style: italic; font-size:13px"> - (console fiddling only)</span></h6>
+		<div class="box float">
+			<ul>
+				<li><a href="#" onclick="go('src/game/core/createclass.js')">Create class</a></li>
+				<li><a href="#" onclick="go('src/game/core/extendclass.js')">Extend class</a></li>
+				<li><a href="#" onclick="go('src/game/core/injectclass.js')">Inject class</a></li>
+				<li><a href="#" onclick="go('src/game/core/super.js')">using _super()</a></li>
+				<li><a href="#" onclick="goCodeOnly('https://gist.githubusercontent.com/ekelokorpi/9736089/raw/mymodule.js')">Create module</a></li>
+				<li><a href="#" onclick="goCodeOnly('https://gist.githubusercontent.com/ekelokorpi/9736104/raw/main.js')">Require module</a></li>
 			</ul>
 			<div class="clear"></div>
 		</div>
