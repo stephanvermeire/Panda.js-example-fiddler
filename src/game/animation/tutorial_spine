@@ -35,7 +35,7 @@ Er is een hoofdfolder voor alle bestanden van dit spelletje:
 * (Switch to basic mode: layout/algorithm: basic, sprites/trim mode:none)
 * Onder data: zet instellingen onder file door naar de folder te bladeren waar de plaatjes staan.
 	C:/xampp/htdocs/taalprog/media/vissenvangen/vis1/vis1_spritesheet.json
-	C:/xampp/htdocs/taalprog/media/vissenvangen/vis1/vis1_spritesheet.png
+	png path: LEEG LATEN!
 * nu klik bij data op "show advanced" en wijzig: prepend folder: true
 * publish. (Melding ok)
 * Sla eventueel het texturepacker bestand zelf even op voor gebruik later.
